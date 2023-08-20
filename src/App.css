@@ -64,15 +64,15 @@
   }
   
   #correct {
-    background-color: #49ac72;
+    background-color: #528D4D;
   }
   
   #almost {
-    background-color: #d5f368f3;
+    background-color: #B7A240;
   }
   
   #error {
-    background-color: #3d373a;
+    background-color: #3A3A3C;
   }
   
   .keyboard {
@@ -183,7 +183,7 @@
         text-align: center;
         background-color: #121212;
         width: 100vw;
-        height: 100vh;
+        height: 500vh;
         color: white;
       }
       
@@ -251,21 +251,21 @@
       }
       
       #correct {
-        background-color: #49ac72;
+        background-color: #528D4D;
       }
       
       #almost {
-        background-color: #d5f368f3;
+        background-color: #B7A240;
       }
       
       #error {
-        background-color: #3d373a;
+        background-color: #3A3A3C;
       }
       
       .keyboard {
         width: 320px;
         height: 300px;
-        margin-top: 60px;
+        margin-top: 20px;
         margin-left:8px;
         margin-right:8px;
         margin-bottom:-50px;
