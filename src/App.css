@@ -189,7 +189,7 @@
       
       body {
         padding: 0;
-        margin-right: 40px;
+        margin-right: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;  
@@ -263,7 +263,7 @@
       }
       
       .keyboard {
-        width: 310px;
+        width: 320px;
         height: 300px;
         margin-top: 60px;
         margin-left:8px;
@@ -295,7 +295,7 @@
       }
       
       .key {
-        width: 70px;
+        width: 75px;
         height: 34px;
         margin: 5px;
         border-radius: 4px;
@@ -309,9 +309,8 @@
       }
     
       .key:hover {
-        width: 42.6px;
-        height: 30px;
-        opacity:.8;
+        width: 71px;
+        height: 34px;
         margin: 5px;
         border-radius: 4px;
         display: grid;
@@ -343,11 +342,12 @@
     
       .tryBtn:hover{
         margin-top:9px;
+        margin-bottom:-30px;
         background-color: #67d695;
         opacity:.7;
         color:rgb(22, 22, 20);
         font-weight:bold;
-        font-size:18.8px;
+        font-size:18.4px;
         border-radius:7px;
         box-shadow: 0px 0px 1px 2px rgb(106, 121, 111);
         ;
