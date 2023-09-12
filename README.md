@@ -15,6 +15,6 @@
 ---
 ### Credits:
 
-**Wordle Bank:** [Dracos](https://gist.github.com/dracos)
+**Wordle Bank:** [arjvik ](https://dagshub.com/arjvik/wordle-wordlist/src/master/answerlist.txt)
 
 **Guidance:** [PedroTech](https://www.youtube.com/@PedroTechnologies/about)
