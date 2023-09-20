@@ -69,7 +69,7 @@ if (currAttempt.attempt === 5) {
   return (
     <div className="App">
       <nav>
-        <h1>Wordle</h1>
+        <h1>Kenny's Wordle</h1>
       </nav>
       <AppContext.Provider value={{ 
         board, 
