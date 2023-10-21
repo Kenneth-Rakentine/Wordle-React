@@ -13,7 +13,7 @@ function App() {
   const [disabledLetters, setDisabledLetters] = useState([]);
   const [gameOver, setGameOver] = useState({gameOver: false, guessedWord: false, });
   const [correctWord, setCorrectWord] = useState("");
-
+  const [consecutiveCorrectAnswers, setConsecutiveCorrectAnswers] = useState(0);
 
   useEffect(() => {
     generateWordSet().then((words) => {
@@ -55,12 +55,14 @@ if (wordSet.has(currWord.toLowerCase())) {
 
 if (currWord.trim().toLowerCase() === correctWord.trim().toLowerCase()) {
   setGameOver({ gameOver: true, guessedWord: true })
+  setConsecutiveCorrectAnswers(consecutiveCorrectAnswers + 1);
   return;
 }
 
-console.log(currAttempt);
+// If the player lost the game, reset the consecutiveCorrectAnswers state variable.
 if (currAttempt.attempt === 5) {
   setGameOver({ gameOver: true, guessedWord: false })
+  setConsecutiveCorrectAnswers(0);
   return;
 }
 
@@ -83,11 +85,12 @@ if (currAttempt.attempt === 5) {
         setDisabledLetters,
         disabledLetters,
         setGameOver,
-        gameOver
+        gameOver,
+        consecutiveCorrectAnswers
         }}>
         <div className='game'>
       <Board/>
-      {gameOver.gameOver ? <GameOver /> : <Keyboard/>}
+      {gameOver.gameOver ? <GameOver consecutiveCorrectAnswers={consecutiveCorrectAnswers} /> : <Keyboard/>}
       </div>
       </AppContext.Provider>
     </div>
